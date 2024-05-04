@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">  
+        <fieldset> <!-- cria um quadradinho pro formulário-->
+        <legend> Página de Login</legend> <!--Legenda o formulário-->
+        Nome: <input type="text" value="Fulano de tal" disabled autofocus> <!-- (input) Recebe a informação do usuário-->
+            <!-- value >> já tem o valor pré-definido
+            Autofocus >> já manda o usúario pra caixinha escolhida
+        DISABLED >> não permite que o usu
+    ário modifique a caixinha -->
+<br> </input>
+            Sobrenome: <input type="text" required> <br> </input>
+            Senha: <input type="password" required> </input> <br>
+            Email: <input type="email" required> <br> <br> <!-- REQUIRED torna orbigatório preencher o campo-->
+            </inut>
+            <input type="submit" value="CLIQUE AQUI PARA ENVIAR" style="width: 300px; color: white; background-color: red;"> <!-- submit serve
+            para enviar o formulário quando o usuário aperta no botão-->
+    </fieldset> 
+    </form> 
+<form action="">
+    <fieldset>
+    <legend> Forms 
+        <input type="checkbox"> Confirmo que li e aceito os termos de uso<br> <br> 
+<!-- checkbox é pra pessoa clicar pra confirmar algo-->
+<hr> <!-- coloca uma linha enorme no site-->
+<input type="radio" name="genero" value="M"> Masculino <!-- radio seria pra pessoa selecionar
+uma das opções-->
+<!-- o nome como é igual "genero" permite q o usuário só escolha uma opção
+Caso modifique um desses nome, permite que ele escolha mais de uma opção-->
+<input type="radio" name="genero" value="F"> Feminino
+<input type="radio" name="genero" value="O"> Outros
+<hr>
+<br>
+<textarea name=""  COLS="7" ROWS="4"> </textarea> <!-- TEXTAREA Permite que o usuário coloque um texto-->
+<input type="reset"> <!-- reseta o formulário (limpa tudo)-->
+<hr> <br>
+<select name="Nome" >  <!-- permite o usuário selecionar uma das opções-->
+    <option value="DF">  Distrito Federal</option>
+    <option value="SP"> São Paulo</option>
+    <option value="GO"> Goiás</option>
+    <option value="RJ"> Rio de Janeiro</option>
+    <hr> <br>
+</select>
+
+
+  <!-- permite que além do usuário
+escolher uma das opções, caso não tenha a que le quer, ele pode escrever-->
+<br>
+Qual a sua cor favorita: <input type="text" list="cores">
+<datalist id="cores"> <!-- DATALIST são os dados da lista-->
+    <option value="Azul"></option>
+    <option value="Vermelho"></option>
+    <option value="Verde"></option>
+</datalist>
+<input type="color"> <br> <!-- permite que o usuário escolha a cor-->
+<hr> 
+<input type="number"  min="0"  max="100"> <br>       <!-- permite que o usuário escolha um número, com máximo e mínimo
+-->
+<input type="date"> <br>  <!-- permite ao usuárioe scolher uma data-->
+<input type="range" min="0"  max="100"> <br> <!-- range >> seria uma barrinha onde o usuário pode deslizá-la-->
+ <input type="time"> <br> <!-- permite ao usuário escolher um horário-->
+<input type="file"> <br> <!-- o usuário pode mandar um arquivo-->
+<input type="tel"> <br> <!-- o usuário coloca um número de telefone-->
+<input type="url"> <br> <!-- o usuário manda um link-->
+
+    </legend>    
+    </fieldset>
+</form>
+
+
+</body>
+</html>
